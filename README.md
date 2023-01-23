@@ -6,7 +6,7 @@
 * JS
 
 ## In-Class Assignments
-* ICA1 
+* ICA1 [GitHub Page](https://itsamazinganna.github.io/wa/wa1.html)
 * ICA2
 * ICA3
 * ICA4
