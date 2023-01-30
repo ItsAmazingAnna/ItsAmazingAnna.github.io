@@ -6,8 +6,8 @@
 * JS
 
 ## In-Class Assignments
-* ICA1 [GitHub Page](https://itsamazinganna.github.io/wa/wa1.html)
-* ICA2 
+* ICA1 [Worksheet](https://docs.google.com/document/d/1VyyKRw98YNQfXu8paSmGFIahvTNLa9mRMBitiB3dG4U/edit?usp=sharing)
+* ICA2 [Worksheet](https://docs.google.com/document/d/1hsHn__4LdslALr6VbQQAWSAHCunzpzyGF3xK2lGuCmg/edit?usp=sharing)
 * ICA3
 * ICA4
 * ICA5
@@ -24,7 +24,7 @@
 
 ## Weekly Assignments
 * WA1 [GitHub Page](https://itsamazinganna.github.io/wa/wa1.html)
-* WA2 
+* WA2 [GitHub Page](https://itsamazinganna.github.io/wa/wa2.html)
 * WA3
 * WA4
 * WA5
