@@ -10,7 +10,7 @@
 * ICA2 [Worksheet](https://docs.google.com/document/d/1hsHn__4LdslALr6VbQQAWSAHCunzpzyGF3xK2lGuCmg/edit?usp=sharing)
 * ICA3 [GitHub Page](https://itsamazinganna.github.io/ica/ica3a.html) [GitHub Page](https://itsamazinganna.github.io/ica/ica-part2/ica3a.html)
 * ICA4 [GitHub Page](https://itsamazinganna.github.io/ica/ica4.html)
-* ICA5
+* ICA5 [GitHub Page](https://itsamazinganna.github.io/ica/ica5.html)
 * ICA6
 * ICA7
 * ICA8
@@ -26,7 +26,7 @@
 * WA1 [GitHub Page](https://itsamazinganna.github.io/wa/wa1.html)
 * WA2 [GitHub Page](https://itsamazinganna.github.io/wa/wa2.html)
 * WA3 [GitHub Page](https://itsamazinganna.github.io/wa/wa3.html)
-* WA4 
+* WA4 [GitHub Page](https://itsamazinganna.github.io/wa/wa5.html)
 * WA5
 * WA6
 * WA7
