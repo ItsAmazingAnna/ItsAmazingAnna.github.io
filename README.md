@@ -26,7 +26,7 @@
 * WA1 [GitHub Page](https://itsamazinganna.github.io/wa/wa1.html)
 * WA2 [GitHub Page](https://itsamazinganna.github.io/wa/wa2.html)
 * WA3 [GitHub Page](https://itsamazinganna.github.io/wa/wa3.html)
-* WA4 [GitHub Page](https://itsamazinganna.github.io/wa/wa5.html)
+* WA4 [GitHub Page](https://itsamazinganna.github.io/wa/wa4.html)
 * WA5
 * WA6
 * WA7
