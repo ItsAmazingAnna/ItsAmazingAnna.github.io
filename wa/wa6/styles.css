@@ -20,9 +20,11 @@ body {
   }
   
   .grid {
+    display: grid;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    grid-template-columns: [article] 75% [gallery] 25% [end];
   }
   
   nav {
@@ -50,6 +52,7 @@ body {
 
   .feature {
       width: 200px;
+      float:left;
   }
 
   article {
