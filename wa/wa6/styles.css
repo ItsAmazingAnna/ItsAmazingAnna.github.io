@@ -74,3 +74,14 @@ body {
   }
 
 }
+
+
+@media only screen and (max-width:500px){
+  .grid {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0 20px;
+      max-width: 980px;
+    }
+}
