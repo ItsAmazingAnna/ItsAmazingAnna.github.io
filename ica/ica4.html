@@ -67,6 +67,37 @@
         a:visited {
             color: #4A5759;
         }
+
+        .button {
+        color: white;
+        padding: 12px 24px;
+        text-align: center;
+        font-size: 12px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
+        .button1 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #EDAFB8;
+        }
+
+        .button1:hover {
+        background-color: #EDAFB8;
+        color: black;
+        }
+
+        .button2 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid #B0C4B1;
+        }
+
+        .button2:hover {
+        background-color: #B0C4B1;
+        color: black;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +119,12 @@
     <p class="small-text"> This is a small text</p>
 
     <p><a href="#">This is a link</a></p>
+
+    <button type="button" onclick="alert('button to give alerts example')">Click Me!</button>
+
+    <p>Which color do you prefer?</p>
+    <button class="button button1">Pink</button>
+    <button class="button button2">Green</button>    
 
 </body>
 </html>
