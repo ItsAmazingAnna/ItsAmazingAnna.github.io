@@ -12,9 +12,14 @@
             font-style: normal;
         }
 
+        .flex {
+            display: flex;
+            flex-direction: row;
+        }
+
         .color-box {
-        height: 10px;
-        width: 10px;
+        height: 100px;
+        width: 100px;
         }
 
         #box1 {
@@ -50,11 +55,23 @@
         h1 {
             font-size: 28px;
         }
+
+        a {
+            text-decoration: none;
+            color: #EDAFB8;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #B0C4B1;
+        }
+        a:visited {
+            color: #4A5759;
+        }
     </style>
-
-
 </head>
 <body>
+    <div class="flex">
+
     <div class="color-box" id="box1">1</div>
     <div class="color-box" id="box2">2</div>
     <div class="color-box" id="box3">3</div>
