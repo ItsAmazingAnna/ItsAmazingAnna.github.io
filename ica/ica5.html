@@ -1,25 +1,88 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Fancy letterheaded paper</title>
-    <link rel="stylesheet" href="/css/ica5.css">
-  </head>
-  <body>
-    <article>
-      <h1>Awesome<br>Company</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .card-header {
+        display:flex;
+        flex-direction: column;
+        gap: 0rem;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        }
 
-      <address>
-        <p>The Awesome Company</p>
-        <p>102-112 Frail Bend Bridge<br>
-        The Dwindlings<br>
-        Little Hornet<br>
-        HX3 9ZQ<br>
-        UK</p>
-      </address>
-    </article>
-   
+    h3 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    button {
+        height: 2rem;
+        width: 10rem;
+        border-radius: 20%;
+        border: 2px black solid;
+    }
+
+    .card-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 2rem;
+        border: .25rem solid black;
+        text-align: center;
+
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h3>Community Garden Project</h3>
+            <button class="expand-btn" aria-label="Expand card">+</button>
+        </div>
+        <div class="card-content">
+            <p class="summary">Join neighbors in creating a shared growing space...</p>
+            <div class="details hidden">
+                <p>Meeting every Saturday at 10am. Tools provided. All skill levels welcome.</p>
+                <p>Contact: garden@community.org</p>
+            </div>
+        </div>
+
+    <div class="center-text">
+        <p>Here is the link to my <a href="https://docs.google.com/document/d/1cjl0w40egOJDVSikUgYmteqoOfmYJh8vwcF0BgyNHBY/edit?usp=sharing"> reflection. </a></p>
+    </div>
+
+    </div>
+    <script>
+    let info = false;
     
-  </body>
+    const expandBtn = document.querySelector('.expand-btn');
+    const details = document.querySelector('.card-content');
+
+    expandBtn.addEventListener('click', showInfo);
+    
+    function showInfo() {
+        console.log("hi");
+        alert("this is an alert");
+        if (info == false){
+            details.style.display = 'flex';
+            info = true;
+        }
+        else {
+            details.style.display = 'none';
+            info = false;
+        }
+    }
+
+    </script>
+</body>
 </html>
