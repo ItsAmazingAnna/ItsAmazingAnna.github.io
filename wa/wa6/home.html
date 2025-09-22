@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VSA</title>
+    <link rel="stylesheet" href="https://use.typekit.net/qzj1mhl.css">
+    <style>
+        html {
+            font-family: "dashiell-bright", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .color-box {
+        height: 100px;
+        width: 100px;
+        }
+
+        #box1 {
+            background-color: #EDAFB8;
+        }
+        #box2 {
+            background-color: #F7E1D7;
+        }
+        #box3 {
+            background-color: #DEDBD2;
+        }
+        #box4 {
+            background-color: #B0C4B1;
+        }
+        #box5 {
+            background-color: #4A5759;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .small-text {
+            font-size: 12px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #e55369;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #476267;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .header-box {
+            background-color: #383433; 
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .nav-brand {
+        display:flex;
+        flex-direction: column;
+        gap: 0rem;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        button {
+            height: 2rem;
+            width: 10rem;
+            border: 2px black solid;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 2rem;
+            border: none;
+            text-align: center;
+
+        }
+
+        .nav-toggle {
+            width: 30px; 
+            height: 25px; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+            align-items: center;
+            margin: 2rem auto;
+        }
+        
+        .menu-line {
+            display: block; 
+            width: 100%;
+            height: 2px; 
+            background-color: black; 
+            border-radius: 2px; 
+            transition: all 0.3s ease; 
+        }
+
+        
+        .main-nav{
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+    
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        z-index: 999;
+    }
+
+    
+    .nav-menu.show {
+        display: flex;
+    }
+
+    
+    .nav-toggle-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .menu-line {
+        width: 100%;
+        height: 4px;
+        background-color: black;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .nav-toggle:hover .menu-line,
+    .nav-toggle:focus .menu-line {
+        background-color: #e55369;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header-box">
+        <nav class="flex">
+                <a href="./home.html" tabindex="1">Main Page</a>
+                <a href="./resource.html" tabindex="1">Contact</a>
+                <a href="./event.html" tabindex="2">Projects</a>
+                <a href="./contact.html" tabindex="3">Interests</a>
+        </nav>
+    </header>
+    <div class="center-text">
+    <nav class="main-nav">
+        <div class="nav-brand">Community Hub</div>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line"></span>
+        </button>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav> 
+
+ 
+    <h1>About VSA</h1>
+    <header tabindex="5">
+        <p>Welcome to VSA Boulder CLub Website</p>
+    </header>
+    <h2 tabindex="6">About VSA</h2>
+    <div>
+        <p>VSA is a student based clue more Vietnamese students to learn more about Vietnamese culture as well as meet outher viets students and build lasting friendships</p>
+    </div>
+    <h3 tabindex="7">Who's welcome to join</h3>
+    <div>
+        <p>For Vietnamese Students at boulder but does not exclude those of different ethinicty or not from CU Boulder, come and learn about vietnamese culture! </p>
+    </div>
+    <h4 tabindex="8">Goals Section</h4>
+    <div>
+         <p>Meet fellow Vietnamese students and have fun! </p>
+    </div>
+    <h5 tabindex="9">Contact VSA</h5>
+    <div>
+        <p>Email: vsa@Colorado.EDU </p>
+    </div>
+    <div>
+        <button type="button" onclick="alert('Yayy! Congrats on finding the VSA website')">Click Me!</button>
+        <p></p>
+    </div>
+
+    <p>Here is the link to my <a href="https://docs.google.com/document/d/1KKb7xRQjH0wOYmlTjzjdeT-aK1LgfNIzHIgrVaRTAvM/edit?usp=sharing"> peer review. </a></p>
+
+    <footer tabindex="10"> VSA (Vietnamese Students Associations) </footer>
+    </div>
+
+    <script>
+    let info = false;
+    
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', showInfo);
+    
+    function showInfo() {
+        if (info == false){
+            navMenu.style.display = 'flex';
+            info = true;
+        }
+        else {
+            navMenu.style.display = 'none';
+            info = false;
+        }
+    } 
+    </script>  
+
+</script>
+</body>
+
+</html>
