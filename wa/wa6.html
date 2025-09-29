@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Grid-Layout</title>
+    <style>
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        max-width: 800px; 
+        margin: 0 auto; 
+        gap: 5px; 
+        }
+
+        .grid-item {
+        background-color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .header-color {
+        background-color: #e55369;
+        color: #fffdfd;
+        padding: 0%;
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #e55369;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        }
+
+        .button:hover {
+        background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+        <div class="grid-container">
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <p><button class="button" onclick="myFunction()">Contact</button></p>
+            </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <p><button class="button" onclick="myFunction()">Contact</button></p>
+            </div>
+            </div>            
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <button class="button" onclick="myFunction()">Contact</button>
+            </div>
+            </div>         
+        </div>
+        </div>
+        <script>
+            function myFunction() {
+                alert("Email:");
+            }
+
+            function bigImg(x) {
+                x.style.width = "500px";
+            }
+
+                function normalImg(x) {
+                x.style.height = "100%";
+                x.style.width = "100%";
+                }
+        </script>
+</body>
+</html>
