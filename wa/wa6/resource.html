@@ -61,22 +61,158 @@
             padding: 15px;
         }
 
+         .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        max-width: 800px; 
+        margin: 0 auto; 
+        gap: 5px; 
+        }
+
+        .grid-item {
+        background-color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .header-color {
+        background-color: #e55369;
+        color: #fffdfd;
+        padding: 0%;
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #e55369;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        }
+
+        .button:hover {
+        background-color: #555;
+        }
+
+        .dark {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        .dark .grid-item {
+            background-color: #2e2e2e;
+        }
+
+        .dark .header-box {
+            background-color: #111;
+        }
+
+        .dark .header-color {
+            background-color: #444;
+        }
+
+        .dark a {
+            color: #91cfff;
+        }
+
+        .dark a:hover {
+            color: #d4d4d4;
+        }
+
     </style>
 </head>
     <body>
     <header class="header-box">
         <nav class="flex">
                 <a href="./home.html" tabindex="1">Main Page</a>
-                <a href="./resource.html" tabindex="1">Contact</a>
-                <a href="./event.html" tabindex="2">Projects</a>
-                <a href="./contact.html" tabindex="3">Interests</a>
+                <a href="./resource.html" tabindex="1">Resource</a>
+                <a href="./event.html" tabindex="2">Event</a>
+                <a href="./contact.html" tabindex="3">Contact</a>
         </nav>
+        <button class="button" style="width:auto; margin-left: 10px;" onclick="toggleTheme()">Toggle Theme</button>
     </header>
-    <div class="center-text">
-        <h1 tabindex="4">VSA Contact Information </h1>
-        <p>Email: vsa@Colorado.EDU </p> 
-        <p>Instagram: <a href="https://www.instagram.com/bouldervsa/" >https://www.instagram.com/bouldervsa/</a></p> 
-        <p>Facebook: <a href="https://www.facebook.com/vsaboulder" >https://www.facebook.com/vsaboulder</a></p>
+<div class="grid-container">
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <p><button class="button" onclick="myFunction()">Contact</button></p>
+            </div>
+            </div>
         </div>
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <p><button class="button" onclick="myFunction()">Contact</button></p>
+            </div>
+            </div>            
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <button class="button" onclick="myFunction()">Contact</button>
+            </div>
+            </div>         
+        </div>
+        </div>
+
+        <p>Here is the link to my <a href="https://docs.google.com/document/d/1XYR4LXecasVoGvkqFpAlQqZGuzjaFjuhL7Pplo_rVIA/edit?usp=sharing"> reflection. </a></p>
+
+        <script>
+        function setTheme(theme) {
+            localStorage.setItem('userTheme', theme);
+            document.body.className = theme;
+        }
+        
+        function toggleTheme() {
+            const currentTheme = document.body.className;
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            setTheme(newTheme);
+        }
+
+        window.addEventListener('load', function () {
+            const savedTheme = localStorage.getItem('userTheme') || 'light';
+            document.body.className = savedTheme;
+        });
+            function myFunction() {
+                alert("Email:");
+            }
+
+            function bigImg(x) {
+                x.style.width = "500px";
+            }
+
+                function normalImg(x) {
+                x.style.height = "100%";
+                x.style.width = "100%";
+                }
+        </script>
     </body>
 </html>
