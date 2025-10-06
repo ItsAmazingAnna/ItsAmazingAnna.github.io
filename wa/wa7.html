@@ -3,12 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> WA7 </title>
+    <link rel="stylesheet" href="https://use.typekit.net/qzj1mhl.css">
+    <style>
+        html {
+            font-family: "dashiell-bright", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .color-box {
+        height: 100px;
+        width: 100px;
+        }
+
+
+        p {
+            font-size: 16px;
+        }
+
+        .small-text {
+            font-size: 12px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        h1 {
+            font-size: 28px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #e55369;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #476267;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .header-box {
+            background-color: #383433; 
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        max-width: 800px; 
+        margin: 0 auto; 
+        gap: 5px; 
+        container-type: inline-size;
+        }
+
+        .grid-item {
+        background-color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        }
+
+        .header-color {
+        background-color: #e55369;
+        color: #fffdfd;
+        padding: 0%;
+        }
+
+        .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #e55369;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        }
+
+        .button:hover {
+        background-color: #555;
+        }
+
+        .dark {
+            background-color: #1e1e1e;
+            color: #ffffff;
+        }
+
+        .dark .grid-item {
+            background-color: #2e2e2e;
+        }
+
+        .dark .header-box {
+            background-color: #111;
+        }
+
+        .dark .header-color {
+            background-color: #444;
+        }
+
+        .dark a {
+            color: #91cfff;
+        }
+
+        .dark a:hover {
+            color: #d4d4d4;
+        }
+
+        @media (hover: none) and (pointer: coarse) {
+        .card:hover {
+            transform: none; 
+        }
+        }
+
+        #privacy {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        border-top: 2px solid #ccc;
+        }
+
+    </style>
 </head>
-<body>
-    
-    <script>
-        let btn = dcument.querySelection("#theme").addEventistener('click',theme)
-    </script>
-</body>
+    <body>
+    <header class="header-box">
+        <nav class="flex">
+                <a href="./home.html" tabindex="1">Main Page</a>
+                <a href="./resource.html" tabindex="1">Resource</a>
+                <a href="./event.html" tabindex="2">Event</a>
+                <a href="./contact.html" tabindex="3">Contact</a>
+        </nav>
+        <button class="button" onclick="toggleTheme()">Toggle Theme</button> 
+        <button class="button" onclick="clearUserData()">Clear My Data</button> 
+        <label style="display: block; margin-top: 10px;">
+        <input type="checkbox" id="optOutToggle" onchange="handleOptOut()" />
+        Don't save my preferences
+        </label>
+    </header>
+<div class="grid-container">
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <p><button class="button" onclick="myFunction()">Contact</button></p>
+            </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <p><button class="button" onclick="myFunction()">Contact</button></p>
+            </div>
+            </div>            
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="../../img/encyclopedia1.png" alt="Stray Kids Image 1" style="width:100%">
+            <header class="header-color">
+                <p>Name:</p>
+            </header>
+            <div>
+                <p>Postion:</p>
+                <p>About them:</p>
+                <p></p>
+                <button class="button" onclick="myFunction()">Contact</button>
+            </div>
+            </div>         
+        </div>
+        </div>
+
+        <p>Here is the link to my <a href="https://docs.google.com/document/d/1XYR4LXecasVoGvkqFpAlQqZGuzjaFjuhL7Pplo_rVIA/edit?usp=sharing"> reflection. </a></p>
+
+        <script>
+        function setTheme(theme) {
+            const optedOut = localStorage.getItem("optOut") == "true";
+            if (optedOut) return; 
+            localStorage.setItem("userTheme", theme);
+            document.body.classList.toggle("dark", theme == "dark");
+        }
+
+        function toggleTheme() {
+            const isDark = document.body.classList.contains("dark");
+            setTheme(isDark ? "light" : "dark");
+        }
+
+        window.addEventListener("load", function () {
+            const savedTheme = localStorage.getItem("userTheme") || "light";
+            const isOptedOut = localStorage.getItem("optOut") == "true";
+
+            document.getElementById("optOutToggle").checked = isOptedOut;
+
+            if (!isOptedOut) {
+            setTheme(savedTheme);
+            }
+
+            const expiry = localStorage.getItem("dataExpiry");
+            if (expiry && Date.now() > parseInt(expiry)) {
+                clearUserData();
+            }
+         });
+
+        function clearUserData() {
+            localStorage.clear();
+            alert("Your data has been cleared.");
+            location.reload();
+        }
+
+        function bigImg(x) {
+            x.style.transform = "scale(1.2)";
+            x.style.transition = "transform 0.3s ease";
+        }
+
+        function normalImg(x) {
+            x.style.transform = "scale(1)";
+        }
+
+        function myFunction() {
+            alert("Email: ");
+        }
+
+        function handleOptOut() {
+            const isOptedOut = document.getElementById("optOutToggle").checked;
+            localStorage.setItem("optOut", isOptedOut.toString());
+
+            if (isOptedOut) {
+                clearUserData(); 
+                alert("You've opted out. No data will be stored.");
+            }
+        }
+        </script>
+    </body>
 </html>
